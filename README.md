@@ -10,3 +10,7 @@ Trimming will always be required, as all ADR1399 samples I have recieved in rece
 
 # **Design:**
 
+# ***Power Supply:***
+Much has stayed from the previous design's power supply (See: [uDR1399 Rev01](https://github.com/T-622/ADR1399-10V-Bench-Standard/tree/main)). The LT3045 is a very good regulator when used properly. One issue I encountered often with the design is that hotplugging power supplies at ~18V with the L, C, and R of the power cables can cause transients large enough to exceed the absolute +22V maximum for the LT3045's inputs. This issue can be resolved through a soft-start circuit using an RC circuit to charge the gate of a p-channel FET, or an appropriate TVS diode. I have not placed these in the design, as my power supply ramps without ringing, and 2x 9V batteries seem to work reasonably well. 
+
+The board's manual power mux is located in the top left corner, and can select from an external 15V regulated supply, or an unregulated 16-20V input fed to the LDO. The LT3045
