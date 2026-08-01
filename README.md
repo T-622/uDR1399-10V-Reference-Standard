@@ -45,3 +45,5 @@ I added an ESD diode to the output to prevent damage through mishandling. The ou
 Boards were ordered from JLCPCB using the ENIG-RoHS finish for better board flatness, minimising component lead stresses. A solder stencil was also added for more repeatability while assembling the boards, and better temperature control compared to using an iron. 
 
 ![Assembly](Images/postpaste.jpg)
+
+Assembly was done with ChipQuik [SMD291AXT4-T4 Leaded Solder Paste](https://www.digikey.ca/en/products/detail/chip-quik-inc/SMD291AXT4/8543521) and using a cheap hotplate at 235 degrees C.
