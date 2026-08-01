@@ -52,7 +52,7 @@ Assembly was done with ChipQuik [SMD291AXT4-T4 Leaded Solder Paste](https://www.
 
 The case uses a Hammond Manufacturing 1455CS801 80mmx54mm case with internally ribbed board supports. This is the most simple solution for most users, and uses the top and bottom layer edge plating to ground the enclosure, without directly attaching it to the output sense ground. For binding posts, the output terminals should be assembled with solid copper twisted pair ethernet cable (Cabling can be found for cheap or out of many cables), coupled with Pomona 3770 gold-plated tellurium copper posts.
 
-For output sensing, it is helpful to use 19.05mm spaced posts, as they will fit BNC-Banana for shielded sense leads. The input connectors do not require such posts, and can be used freely.
+For output sensing, it is helpful to use 19.05mm spaced posts, as they will fit BNC-Banana for shielded sense leads. The input connectors do not require such posts, and can be used freely. Foam Caps out of closed-cell foam are ideal to attach onto the board to avoid air currents around the ADR1399, but 3D printed ones can be created from the board's .STEP model provided in this repository.
 
 # **Stability Testing**
 
