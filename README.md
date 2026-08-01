@@ -60,7 +60,7 @@ Before powering ON, PLEASE READ Design Note 1 - Power supply. This will help und
 
 Stability testing was conducted after 72H on unit 1 of 3. The following results were obtained by my Keithley DMM6500 6-1/2 digit multimeter:
 
-![Initial Stability](Image/unit01_13hr_stability_after_72hrs_pon.png)
+![Initial Stability](Images/unit01_13hr_stability_after_72hrs_pon.png)
 
 Using 10NPLC, 10 sample Repeating filter, 10GOhm InZ, AZ On, test controller works well to collect large amounts of stability data. I will update with temeperature data once I get a chance. The DMM6500 is relatively noisy, thus the STD-Dev is calculated over 1799 samples for averaging. 3.33uV STD-Dev is signficantly better than the Rev01 board, which obtained only about 8uV. 
 
