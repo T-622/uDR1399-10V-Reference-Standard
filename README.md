@@ -16,8 +16,10 @@ Trimming will always be required, as all ADR1399 samples I have recieved in rece
 ![DesignSchematic](Images/schematiccapture.png)
 
 ## **Board Layout**
+
 ### **2D Multilayer:**
 ![Board Layout](Images/boardshot.png)
+
 ### **3D Renderings**
 ![3D Board Rendering](Images/3drendering_top.png)
 ![3D Board Rendering](Images/3drendering_bottom.png)
