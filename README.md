@@ -25,4 +25,7 @@ The gain stage was redesigned to use the bootstrapped Zener scheme. As a result,
 Additionally, the non-inverting amplifier gain resistors are now set by an LT5400 resistor network. The match on these for the B grade parts is 0.025%, with a 0.2ppm/c matching coeffecient. These are configured in a 2K + 4.5K stage, for a gain of 1.44v/v. Two additional trim resistors may be used if required.
 
 ## **4 - Output**
-I added an ESD diode to the output to prevent damage through mishandling. The output consists of a transistor and a current limit. Currently the 33 ohm set resistor provides a maximum of 10mA.
+I added an ESD diode to the output to prevent damage through mishandling. The output consists of a transistor and a current limit. Currently the 33 ohm set resistor provides a maximum of 10mA. The output features the ~10V output, and the chassis ground, and the sense ground. Either can be chosen for experimentation purposes.
+
+# **Assembly:**
+Boards were ordered from JLCPCB using the ENIG-RoHS finish for better board flatness, minimising component lead stresses.
