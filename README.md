@@ -48,6 +48,19 @@ Boards were ordered from JLCPCB using the ENIG-RoHS finish for better board flat
 
 Assembly was done with ChipQuik [SMD291AXT4-T4 Leaded Solder Paste](https://www.digikey.ca/en/products/detail/chip-quik-inc/SMD291AXT4/8543521) and using a cheap hotplate at 235 degrees C. Note that these boards are NOT certified as lead free for obvious reasons. Leaded solder has a lower melting point, and is signficantly better for component stresses according to numerous voltnuts. Bismuth solder paste could be used, but it provides very little mechanical strength.
 
+![Mechanical Case Assembly](Images/mechassembly.jpg)
+
+The case uses a Hammond Manufacturing 1455CS801 80mmx54mm case with internally ribbed board supports. This is the most simple solution for most users, and uses the top and bottom layer edge plating to ground the enclosure, without directly attaching it to the output sense ground. For binding posts, the output terminals should be assembled with solid copper twisted pair ethernet cable (Cabling can be found for cheap or out of many cables), coupled with Pomona 3770 gold-plated tellurium copper posts.
+
+For output sensing, it is helpful to use 19.05mm spaced posts, as they will fit BNC-Banana for shielded sense leads. The input connectors do not require such posts, and can be used freely.
+
 # **Stability Testing**
 
+Before powering ON, PLEASE READ Design Note 1 - Power supply. This will help understanding potential input voltage damage risks associated with connections.
+
+Stability testing was conducted after 72H on unit 1 of 3. The following results were obtained by my Keithley DMM6500 6-1/2 digit multimeter:
+
+![Initial Stability](Images/unit01_13hr_stability_after_72hrs_pon.png)
+
+Using 10NPLC, 10 sample Repeating filter, 10GOhm InZ, AZ On, test controller works well to collect large amounts of stability data. I will update with temeperature data once I get a chance. The DMM6500 is relatively noisy, thus the STD-Dev is calculated over 1799 samples for averaging. 3.33uV STD-Dev is signficantly better than the Rev01 board, which obtained only about 8uV. 
 
