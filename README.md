@@ -1,6 +1,7 @@
 # uDR1399-10V-Reference-Standard
 
 Pronounciation: Mew-Dee-Arr-thirteen-ninety-nine. 
+
 The second revision of the ADR1399 portable bench standard for stable voltage outputs. 
 
 # **Background:**
@@ -11,6 +12,11 @@ Trimming will always be required, as all ADR1399 samples I have recieved in rece
 
 # **Design:**
 
+![Board Layout](Images/boardshot.png)
+![3D Board Rendering](Images/3drendering_top.png)
+![3D Board Rendering](Images/3drendering_bottom.png)
+
+# **Design Notes:**
 ## **1 - Power Supply:**
 Much has stayed from the previous design's power supply (See: [uDR1399 Rev01](https://github.com/T-622/ADR1399-10V-Bench-Standard/tree/main)). The LT3045 is a very good regulator when used properly. One issue I encountered often with the design is that hotplugging power supplies at ~18V with the L, C, and R of the power cables can cause transients large enough to exceed the absolute +22V maximum for the LT3045's inputs. This issue can be resolved through a soft-start circuit using an RC circuit to charge the gate of a p-channel FET, or an appropriate TVS diode. I have not placed these in the design, as my power supply ramps without ringing, and 2x 9V batteries seem to work reasonably well. 
 
@@ -28,4 +34,6 @@ Additionally, the non-inverting amplifier gain resistors are now set by an LT540
 I added an ESD diode to the output to prevent damage through mishandling. The output consists of a transistor and a current limit. Currently the 33 ohm set resistor provides a maximum of 10mA. The output features the ~10V output, and the chassis ground, and the sense ground. Either can be chosen for experimentation purposes.
 
 # **Assembly:**
-Boards were ordered from JLCPCB using the ENIG-RoHS finish for better board flatness, minimising component lead stresses.
+Boards were ordered from JLCPCB using the ENIG-RoHS finish for better board flatness, minimising component lead stresses. A solder stencil was also added for more repeatability while assembling the boards, and better temperature control compared to using an iron. 
+
+![Assembly](Images/postpaste.jpg)
