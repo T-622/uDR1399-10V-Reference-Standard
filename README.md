@@ -46,4 +46,6 @@ Boards were ordered from JLCPCB using the ENIG-RoHS finish for better board flat
 
 ![Assembly](Images/postpaste.jpg)
 
-Assembly was done with ChipQuik [SMD291AXT4-T4 Leaded Solder Paste](https://www.digikey.ca/en/products/detail/chip-quik-inc/SMD291AXT4/8543521) and using a cheap hotplate at 235 degrees C.
+Assembly was done with ChipQuik [SMD291AXT4-T4 Leaded Solder Paste](https://www.digikey.ca/en/products/detail/chip-quik-inc/SMD291AXT4/8543521) and using a cheap hotplate at 235 degrees C. Note that these boards are NOT certified as lead free for obvious reasons. Leaded solder has a lower melting point, and is signficantly better for component stresses according to numerous voltnuts. Bismuth solder paste could be used, but it provides very little mechanical strength.
+
+
