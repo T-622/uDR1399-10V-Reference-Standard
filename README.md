@@ -1,7 +1,5 @@
 # uDR1399-10V-Reference-Standard
 
-Pronounciation: Mew-Dee-Arr-thirteen-ninety-nine. 
-
 The second revision of the ADR1399 portable bench standard for stable voltage outputs. 
 
 # **Background:**
