@@ -64,3 +64,9 @@ Stability testing was conducted after 72H on unit 1 of 3. The following results 
 
 Using 10NPLC, 10 sample Repeating filter, 10GOhm InZ, AZ On, test controller works well to collect large amounts of stability data. I will update with temeperature data once I get a chance. The DMM6500 is relatively noisy, thus the STD-Dev is calculated over 1799 samples for averaging. 3.33uV STD-Dev is signficantly better than the Rev01 board, which obtained only about 8uV. 
 
+# **Long-Term Stability and Noise Tests**
+
+The unit being tested is approaching 900Hrs of power on / burn in at this point. An MY64 (May 2024 Cal) Keysight 34465A is further being used to aid in stability testing. As in [this](https://www.eevblog.com/forum/testgear/bench-dmm-stability-comparisons-with-testcontroller/125/) extensive thread on the EEVBlog Forums, the Keithley DMM6500 is well suited in being an overall very temperature stable meter with a great interface, but its' internal reference and acquisition mechanism is creating quite a lot of noise. A Keysight 34465A is significantly lower in noise when used in 100PLC to compare to a Keithley's 10PLC + 10x Repeating filter. 
+
+Noise performance was evaluated through 6 tests, split into 100PLC and 10PLC + 10x Smoothing Average filter categories. Increments of 2min, 5min, and 10min were used to obtain the best representation of the uDR1399's output noise across various time intervals. 
+
