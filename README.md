@@ -70,3 +70,5 @@ The unit being tested is approaching 900Hrs of power on / burn in at this point.
 
 Noise performance was evaluated through 6 tests, split into 100PLC and 10PLC + 10x Smoothing Average filter categories. Increments of 2min, 5min, and 10min were used to obtain the best representation of the uDR1399's output noise across various time intervals. 
 
+![Reference Noise Comparison Tests](Images/RefNoiseComparison.png)
+
