@@ -68,7 +68,9 @@ Using 10NPLC, 10 sample Repeating filter, 10GOhm InZ, AZ On, test controller wor
 
 The unit being tested is approaching 900Hrs of power on / burn in at this point. An MY64 (May 2024 Cal) Keysight 34465A is further being used to aid in stability testing. As in [this](https://www.eevblog.com/forum/testgear/bench-dmm-stability-comparisons-with-testcontroller/125/) extensive thread on the EEVBlog Forums, the Keithley DMM6500 is well suited in being an overall very temperature stable meter with a great interface, but its' internal reference and acquisition mechanism is creating quite a lot of noise. A Keysight 34465A is significantly lower in noise when used in 100PLC to compare to a Keithley's 10PLC + 10x Repeating filter. 
 
-Noise performance was evaluated through 6 tests, split into 100PLC and 10PLC + 10x Smoothing Average filter categories. Increments of 2min, 5min, and 10min were used to obtain the best representation of the uDR1399's output noise across various time intervals. 
+Noise performance was evaluated through 6 tests, split into 100PLC and 10PLC + 10x Smoothing Average filter categories. Each test was averaged over a 5 trial window. Increments of 2min, 5min, and 10min were used to obtain the best representation of the uDR1399's output noise across various time intervals. 
 
 ![Reference Noise Comparison Tests](Images/RefNoiseComparison.png)
+
+Overall, the uDR1399's output noise appears to be best at 5min sampling @ 100PLC, at approximately 399.08nV. This has been shown on the earlier EEVBlog forum thread to be lower and more temperature-independent than similar modules such as the VREF10. Further testing will be performed on the CircuitValley Ten399 3V1, which utlizes the ADI ADR1399. 
 
